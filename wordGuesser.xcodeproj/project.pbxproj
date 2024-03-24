@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F9CF56D82BAFCD8D009EC43C /* wordGuesserApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF56D72BAFCD8D009EC43C /* wordGuesserApp.swift */; };
-		F9CF56DA2BAFCD8D009EC43C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF56D92BAFCD8D009EC43C /* ContentView.swift */; };
+		F9CF56D82BAFCD8D009EC43C /* WordGuesser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF56D72BAFCD8D009EC43C /* WordGuesser.swift */; };
+		F9CF56DA2BAFCD8D009EC43C /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF56D92BAFCD8D009EC43C /* GameView.swift */; };
 		F9CF56DC2BAFCD8E009EC43C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CF56DB2BAFCD8E009EC43C /* Assets.xcassets */; };
 		F9CF56DF2BAFCD8E009EC43C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9CF56DE2BAFCD8E009EC43C /* Preview Assets.xcassets */; };
 		F9CF56E72BB01C46009EC43C /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = F9CF56E62BB01C46009EC43C /* ConfettiSwiftUI */; };
+		F9CF56E92BB0857D009EC43C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9CF56E82BB0857D009EC43C /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F9CF56D42BAFCD8D009EC43C /* wordGuesser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wordGuesser.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9CF56D72BAFCD8D009EC43C /* wordGuesserApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordGuesserApp.swift; sourceTree = "<group>"; };
-		F9CF56D92BAFCD8D009EC43C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9CF56D72BAFCD8D009EC43C /* WordGuesser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordGuesser.swift; sourceTree = "<group>"; };
+		F9CF56D92BAFCD8D009EC43C /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F9CF56DB2BAFCD8E009EC43C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9CF56DE2BAFCD8E009EC43C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9CF56E82BB0857D009EC43C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +55,9 @@
 		F9CF56D62BAFCD8D009EC43C /* wordGuesser */ = {
 			isa = PBXGroup;
 			children = (
-				F9CF56D72BAFCD8D009EC43C /* wordGuesserApp.swift */,
-				F9CF56D92BAFCD8D009EC43C /* ContentView.swift */,
+				F9CF56E82BB0857D009EC43C /* Constants.swift */,
+				F9CF56D72BAFCD8D009EC43C /* WordGuesser.swift */,
+				F9CF56D92BAFCD8D009EC43C /* GameView.swift */,
 				F9CF56DB2BAFCD8E009EC43C /* Assets.xcassets */,
 				F9CF56DD2BAFCD8E009EC43C /* Preview Content */,
 			);
@@ -145,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9CF56DA2BAFCD8D009EC43C /* ContentView.swift in Sources */,
-				F9CF56D82BAFCD8D009EC43C /* wordGuesserApp.swift in Sources */,
+				F9CF56E92BB0857D009EC43C /* Constants.swift in Sources */,
+				F9CF56DA2BAFCD8D009EC43C /* GameView.swift in Sources */,
+				F9CF56D82BAFCD8D009EC43C /* WordGuesser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +286,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"wordGuesser/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Word Guesser";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,11 +314,11 @@
 				DEVELOPMENT_ASSET_PATHS = "\"wordGuesser/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Word Guesser";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

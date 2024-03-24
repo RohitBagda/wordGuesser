@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct wordGuesserApp: App {
+struct WordGuesser: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GameView()
         }
     }
 }
